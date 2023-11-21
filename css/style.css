@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2c34;
+    color: #d1d1e9;
+}
+
+.ms_container {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms_buttons .ms_custom_button {
+    background-color: #d1d1e9;
+    color: #2b2c34;
+    border-color: #2b2c34;
+    font-weight: 600;
+}
+
+.ms_container .ms_carousel {
+    height: 60%;
+    width: 75%;
+    max-width: 1000px;
+}
+
+.ms_items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ms_item {
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.ms_item img,
+.ms_thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ms_item.ms_active {
+    opacity: 1;
+}
+
+.ms_prev i,
+.ms_next i {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #d1d1e9;
+    background-color: #2b2c34;
+    opacity: .5;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.ms_prev i {
+    top: 0;
+}
+
+.ms_next i {
+    bottom: 0;
+}
+
+.ms_thumbnails {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ms_thumbnail {
+    width: 100%;
+    height: calc(100% / 5);
+    opacity: 0.25;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.ms_active_thumbnail {
+    opacity: 1;
+    border-color: #d1d1e9;
+}
+
+.ms_info {
+    max-width: 40%;
+    max-height: 50%;
+    overflow-y: auto;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    z-index: 99;
+    text-align: end;
+    font-size: .75rem;
+    font-style: italic;
+    background-color: rgba(209, 209, 232, .5);
+    color: #2b2c34;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carosello Array di Oggetti</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- /Bootstrap 5 -->
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FontAwesome -->
+
+  <!-- il mio foglio di stile -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- /il mio foglio di stile -->
+</head>
+
+<body>
+  <div class="ms_container d-flex flex-column">
+    <div class="row p-3 ms_buttons">
+      <div class="btn-group d-flex justify-content-center align-items-center" role="group" aria-label="Autoplay">
+        <h4 class="mb-1 me-3">Autoplay:</h4>
+        <button id="startBtn" type="button"
+          class="btn btn-primary ms_custom_button rounded-start border-end">Start</button>
+        <button id="stopBtn" type="button" class="btn btn-primary ms_custom_button">Stop</button>
+      </div>
+    </div>
+    <div class="row ms_carousel">
+      <div class="col-10 p-0 h-100">
+        <div class="ms_items">
+          <div class="ms_prev"><i class="fa-solid fa-circle-chevron-up"></i></div>
+          <div class="ms_next"><i class="fa-solid fa-circle-chevron-down"></i></div>
+          <div id="imageInfo" class="ms_info">
+            <!-- Info inserite da js -->
+          </div>
+          <!-- Immagini inserite da js -->
+        </div>
+      </div>
+      <div class="col-2 p-0 h-100">
+        <div class="ms_thumbnails">
+          <!-- Thumbnails inserite da JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- il mio script -->
+  <script src="js/main.js"></script>
+  <!-- il mio script -->
+</body>
+
+</html>
